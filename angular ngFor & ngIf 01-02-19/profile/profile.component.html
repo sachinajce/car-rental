@@ -1,0 +1,10 @@
+
+ <div>Name : {{user.name}}</div>
+    <div>Designation : {{user.designation}}</div>
+     <div>Address : {{user.address}}</div>
+    <div><button (click)="togglecheck()">Click ME</button></div>
+     <div *ngIf=!check>
+     <div><p *ngFor="let phoneno of user.phone">{{phoneno}}</p></div></div>   
+    
+
+ 
