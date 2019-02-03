@@ -1,0 +1,36 @@
+<br>
+<br>
+<br>
+<div class="container register">
+    <div class="row"> 
+        <div class="col-md-6 register-right">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Apply as a Student</h3>
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                          <form #f="ngForm" name="regForm" (submit)="register(f)">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name *" name="name" id="name" [(ngModel)]="student.name" value="" />
+                            </div>
+                           
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" name="pass" id="pass" [(ngModel)]="student.pass" value="" />
+                            </div>
+                            <div >
+            
+            
+                                <input type="submit" name="submit" id="submit" value="Login"/><br/>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-6">
+                            
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
